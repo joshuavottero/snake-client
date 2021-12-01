@@ -21,6 +21,9 @@ const setupInput = function (conn) {
     if (key === "d"){
       conn.write("Move: right");
     }
+    if (key === "f"){
+      conn.write("Say: f");
+    }
   }
   stdin.on("data", handleUserInput);
   return stdin;
